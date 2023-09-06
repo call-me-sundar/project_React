@@ -3,10 +3,15 @@ const mysql = require('mysql2/promise');
 
 // create the connection to database
 const pool = mysql.createPool({
-  host: 'sql12.freesqldatabase.com',
-  user: 'sql12643599',
-  database: 'sql12643599',
-  password: '1UnX8VGBli'
+  // host: 'sql12.freesqldatabase.com',
+  // host: 'localhost',
+  // user: 'sql12643599',
+  // database: 'sql12643599',
+  // password: '1UnX8VGBli'
+  
+  host: 'localhost',
+  user: 'root',
+  database: 'dashboard'
 });
 
 pool.getConnection()
